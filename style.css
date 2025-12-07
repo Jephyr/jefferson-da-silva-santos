@@ -226,3 +226,36 @@ body {
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
+
+/* Botão de alternar tema fixo no canto superior direito */
+.theme-toggle {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 2500;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.12);
+    color: #222;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-toggle:hover { background: rgba(0,0,0,0.04); }
+
+/* Tema escuro (variáveis e ajustes simples) */
+.dark-theme {
+    --cor-fundo: #0b0b0d;
+    --cor-texto-claro: #f2f2f2;
+    --cor-principal: rgba(178,95,58,0.12);
+    --cor-secundaria: #d48a5a;
+    --header-bg: #0a0a0b;
+}
+
+body.dark-theme { background-color: var(--cor-fundo); color: var(--cor-texto-claro); }
+
+.dark-theme .modal-dialog { background: #111; color: var(--cor-texto-claro); }
+
+/* Ajustes visuais do botão em tema escuro */
+.dark-theme .theme-toggle { color: var(--cor-texto-claro); border-color: rgba(255,255,255,0.08); background: transparent; }
