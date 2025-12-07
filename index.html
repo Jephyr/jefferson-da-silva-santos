@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Jefferson da Silva Santos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Esconde todas as páginas por padrão */
+        .page-section {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        /* Mostra apenas a página ativa */
+        .page-section.active {
+            display: block;
+        }
+
+        /* Animação de transição */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .home-intro { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="menu-nav">
+            <a href="#" class="nav-link" data-page="inicio">Início</a>
+            <a href="#" class="nav-link" data-page="sobre-mim">Sobre mim</a>
+            <a href="#" class="nav-link" data-page="formacao-academica">Formação</a>
+            <a href="#" class="nav-link" data-page="portfolio">Portfólio</a>
+            <a href="#" class="nav-link" data-page="contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- PAGINA INÍCIAL -->
+        <section id="inicio" class="page-section active home-intro">
+            <h1>Olá — Eu sou Jefferson.</h1>
+            <p>Bem-vindo ao meu portfólio. Explore as páginas acima para conhecer minha trajetória, formação, experiência profissional e descobrir as melhores formas de entrar em contato.</p>
+        </section>
+
+        <!-- PAGINA SOBRE MIM -->
+        <section id="sobre-mim" class="page-section content-section">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é <strong>Jefferson da Silva Santos</strong>, tenho 28 anos, sou casado e moro em Santo André (SP).</p>
+            <p>Fora do trabalho, sou um entusiasta da música, tendo aprendido de forma autodidata a tocar vários instrumentos: violão, baixo, piano e bateria.</p>
+            <p>Meu lazer é dedicado à família, seja praticando Karatê junto com meu filho, o que reforça disciplina e laços, ou aproveitando a convivência em momentos culturais como filmes, séries e músicas, além de passeios a parques, museu e restaurantes.</p>
+        </section>
+
+        <!-- PAGINA FORMAÇÃO ACADÊMICA -->
+        <section id="formacao-academica" class="page-section content-section">
+            <h2>Formação Acadêmica</h2>
+            <ul class="lista-formacao">
+                <li>Ensino superior | Graduação - Tecnologia em Ciência de Dados – Uninter | 2025/2027 - cursando</li>
+            </ul>
+        </section>
+
+        <!-- Certificações profissionais e cursos complementares que complementam minha formação acadêmica. -->
+        <section id="formacao" class="page-section content-section">
+            <h2>Cursos e Certificados</h2>
+                <ul class="lista-formacao">
+                <li><strong>INGLÊS</strong> - Básico, intermediário ao avançado - New U-Best - Uninter | 2025 - Cursando</li>
+                <li><strong>GOOGLE</strong> - Certificado Profissional de Google Data Analytics – Coursera | 2024 - 2025 – Cursando</li>
+                <li><strong>Santander Open Academy</strong>:</li>
+                <ul>
+                    <li>Introdução à Ciência de Dados (Colab IE University) | Concluído, 2024</li>
+                    <li>GOOGLE GEMINI - Inteligência Artificial e Produtividade | Concluído, 2024</li>
+                    <li>POWER BI | Concluído, 2024</li>
+                </ul>
+                <li><strong>AutoCAD 2D e AutoCAD 3D</strong> – Evolute | Conclusão 2013 - 2014</li>
+                <li><strong>Inglês Básico</strong> | 2012 (Particular)</li>
+                <li><strong>Pacote Office básico</strong> - Excel intermediário – Easycomp | Concluído em 2009</li>
+            </ul>
+        </section>
+
+        <!-- Principais experiências profissionais e projetos desenvolvidos ao longo da carreira. -->
+        <section id="portfolio" class="page-section content-section">
+            <h2>Portfólio - Experiência Profissional</h2>                      
+            <div class="experiencia">
+                <h3>FTT FIBER | FEV 2022 à 2025 (3 anos - Atual)</h3>
+                <h4>Líder de Produção</h4>
+                <p>Liderança e gestão de equipes, com foco em treinamento, organização de rotinas, distribuição de tarefas e definição de prioridades. Responsável por garantir o cumprimento de cronogramas e gerenciar a execução de serviços de telecomunicações e dados de rede, além de liderar a equipe de preparação e despacho e monitoramento de atividades para a rede externa.</p>
+            </div>
+
+            <div class="experiencia">
+                <h3>SIGA TECNOLOGIA | Mar 2015 - Jan 2022 (6 anos, 6 meses)</h3>
+                <h4>Operador Auxiliar (Mar 2015 - 2019) / Líder de produção (2019 – Jan 2022)</h4>
+                <p>Geoprocessamento e análise de dados, produção e conversão de arquivos, utilizando AutoCAD, Excel, ArcView GIS, Google Earth e outras ferramentas. Além de liderar equipes com mais de 50 funcionários, garantindo a qualidade e a integridade dos dados, realizando modelagem, manutenção e limpeza, além de consolidar o trabalho das equipes para a conclusão dos projetos.</p>
+            </div>
+
+            <div class="experiencia">
+                <h3>GEOPROJ | Jan 2013 – Out 2014 (1 ano 10 meses)</h3>
+                <h4>Aprendiz</h4>
+                <p>Geoprocessamento, análise de dados geográficos, modelagem de mapas urbanos básicos (MUB). (AutoCAD, ArcView GIS, Google Earth e Excel).</p>
+            </div>
+        </section>
+
+        <!-- PAGINA CONTATO -->
+        <section id="contato" class="page-section content-section">
+            <h2>Contato</h2>
+            
+            <p><strong>Nome:</strong> Jefferson da Silva Santos</p>
+            <p><strong>E-mail:</strong> jefferson.silva.work@gmail.com</p>
+            <p><strong>Localização:</strong> Brasil | Santo André – SP</p>
+            <p><strong>Celular:</strong> (11) 98486-8791</p>
+
+            <h3>Envie uma Mensagem</h3>
+            <form id="contatoForm" class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <script>
+        // Navegação entre páginas
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = link.getAttribute('data-page');
+
+                // Remove a classe 'active' de todas as páginas
+                document.querySelectorAll('.page-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Se for a área de formação, mostrar todas as páginas cujo id começa com 'formacao'
+                if (pageId && pageId.startsWith('formacao')) {
+                    document.querySelectorAll('[id^="formacao"]').forEach(s => s.classList.add('active'));
+                    return;
+                }
+
+                // Adiciona a classe 'active' apenas à página clicada (padrão)
+                const target = document.getElementById(pageId);
+                if (target) target.classList.add('active');
+            });
+        });
+    </script>
+
+    <script src="JS.js"></script>
+
+    <footer class="site-footer">
+        © 2025 Jefferson da Silva Santos. Portfólio Pessoal. <br>
+        Email: <a href="mailto:jefferson.silva.work@gmail.com">jefferson.silva.work@gmail.com</a> | Local: Santo André, SP
+    </footer>
+</body>
+</html>

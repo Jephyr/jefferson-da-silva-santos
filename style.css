@@ -1,0 +1,228 @@
+/* --- MINHA PALETA DE CORES (Customizando Variáveis CSS) --- */
+:root {
+    --cor-principal: #bd592bef; /* Meu tom de Laranja/Terracota mais escuro */
+    --cor-secundaria: #992900; /* Laranja um pouco mais claro, ideal para o efeito hover */
+    --cor-fundo: #EFEBE6; /* O bege que escolhi para o fundo principal (Off-white) */
+    --cor-texto-claro: #F8F8F8; /* Branco suave para textos em fundos escuros */
+    --cor-borda-menu: #4A2C1C; /* Marrom forte para dar profundidade e bordas */
+    --header-bg: #111217; /* O fundo bem escuro que defini para o cabeçalho */
+}
+
+/* Regras básicas e reset de estilos que uso em todo o site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Meu estilo para o container que centraliza o conteúdo */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px 90px; /* Garantindo espaço no final por causa do rodapé fixo */
+}
+
+/* A caixa de introdução na página inicial (home) */
+.home-intro {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 36px 28px;
+    background-color: #ffffff;
+    color: #222;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.home-intro h1 {
+    margin: 0 0 12px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.home-intro p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* --- MINHA ESTRUTURA DE CABEÇALHO E NAVEGAÇÃO --- */
+.header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 0; /* Eu prefiro remover o gap para os itens ficarem lado a lado */
+}
+
+/* Como estilizei os links de navegação */
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 16px;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+
+/* Regra para garantir que os itens do menu fiquem grudados */
+.menu-nav a:not(:last-child) {
+    /* Mantenho os itens juntos, sem bordas no meio */
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.04);
+    color: #fff;
+}
+
+/* --- SEÇÕES DE CONTEÚDO COM O TEMA LARANJA --- */
+.content-section {
+    /* O fundo escuro que eu escolhi para as seções de destaque */
+    background-color: var(--cor-principal); 
+    border: 1px solid var(--cor-borda-menu);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* A cor de texto que usei dentro dessas seções escuras */
+    color: var(--cor-texto-claro); 
+}
+
+.content-section h2 {
+    color: var(--cor-texto-claro);
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Meus ajustes de estilo para as listas e títulos internos */
+.lista-formacao {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-formacao li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.lista-formacao li::before {
+    content: '•';
+    color: var(--cor-secundaria); /* Colocando a cor secundária no marcador de lista */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.experiencia {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--cor-secundaria);
+}
+.experiencia h3, .experiencia h4 {
+    color: var(--cor-texto-claro); /* Uso do texto claro para todos os títulos internos */
+}
+
+
+/* --- ESTILOS DO FORMULÁRIO DE CONTATO --- */
+.contato-form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--cor-texto-claro); /* O rótulo também deve ser claro */
+}
+
+/* Estilização dos campos de input (fundo claro para bom contraste) */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333; /* Texto escuro dentro do campo */
+    background-color: #fff;
+}
+
+/* Estilização do meu botão de envio */
+.contato-form button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-borda-menu); /* Borda escura que escolhi para o botão */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: var(--cor-principal);
+}
+
+/* --- MINHA CONFIGURAÇÃO DE RODAPÉ --- */
+.site-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--header-bg);
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    z-index: 1001;
+}
+
+.site-footer a { color: #fff; text-decoration: underline; }
+
+/* Estilo que criei para as mensagens de feedback do formulário */
+.form-message {
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
